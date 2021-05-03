@@ -1,8 +1,0 @@
-FROM composer:2
-
-ARG uid
-ARG user
-
-RUN addgroup -g $uid $user && adduser -G $user -g $user -s /bin/sh -D $user
-
-WORKDIR /var/www/html
